@@ -45,6 +45,8 @@ function runEnter(){
     // Build Table
     var table = d3.select("#ufo-table");
     var tbody = table.select("tbody")
+     // Clear table before rendering for clean start
+    tbody.html("");
     var trow;
     // Iterate through each ufo sighting from filteredData
     filteredData.forEach((data) => {
